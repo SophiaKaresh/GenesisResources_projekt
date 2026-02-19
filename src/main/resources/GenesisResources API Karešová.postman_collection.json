@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "cbe3a219-9bcc-4c58-8d6b-4bf7bdce4429",
+		"name": "GenesisResources API Karešová",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49821652",
+		"_collection_link": "https://sophiakaresh-5973918.postman.co/workspace/Sophia-Kare%C5%A1ov%C3%A1's-Workspace~e5ff7970-9700-4c3b-84ca-b00cfd438916/collection/49821652-cbe3a219-9bcc-4c58-8d6b-4bf7bdce4429?action=share&source=collection_link&creator=49821652"
+	},
+	"item": [
+		{
+			"name": "Create users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Sophia\",\r\n  \"surname\": \"Karesova\",\r\n  \"personid\": \"jXa4g3H7oPq2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ALL users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "ALL users with UID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Get according ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update users",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 2,\r\n  \"name\": \"Sophia Kisza\",\r\n  \"surname\": \"Changed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete users",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
